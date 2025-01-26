@@ -8,11 +8,11 @@
       <p>Error fetching the post.</p>
     </div>
 
-    <div v-if="post">
+    <div v-if="post" class="post-details">
       <h1 class="text-4xl font-bold text-gray-900 mb-4">{{ post.title.rendered }}</h1>
       <div v-html="post.content.rendered" class="text-gray-700"></div>
 
-      <div class="max-w-4xl mx-auto py-8 px-4">
+      <div class="comments max-w-4xl mx-auto py-8 px-4">
         <h2 class="text-3xl font-bold text-gray-900 mb-6">Comments</h2>
 
         <!-- Existing Comments -->
